@@ -78,6 +78,6 @@ public class StepDefATM {
     public void balance_in_bank(double amount){
         assertEquals(amount, atm.getBalance());
     }
-    //นาย พีรสิษฐ์ พลอยอร่าม 6410451237
+    //Peerasit Ployaram 6410451237
 
 }
