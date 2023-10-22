@@ -70,4 +70,14 @@ public class StepDefATM {
                      bank.getCustomer(id).getAccount().getBalance());
     }
 
+    @When("I deposit {float} to atm")
+    public void deposit(double amount){
+        atm.deposit(amount);
+    }
+    @Then("in my atm i have balance {float}")
+    public void balance_in_bank(double amount){
+        assertEquals(amount, atm.getBalance());
+    }
+    //นาย พีรสิษฐ์ พลอยอร่าม 6410451237
+
 }
